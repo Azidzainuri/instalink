@@ -2155,8 +2155,6 @@ $(function () {
 	],
 	currency: "USD",
 });
-</script>
-<script>  
   $("#tombol-kirim").click(function(){
     if ($("#nama-lengkap").val() == "") {
       $("#nama-lengkap").focus();
