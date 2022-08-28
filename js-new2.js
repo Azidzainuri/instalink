@@ -118,7 +118,7 @@
     });
     $(".view-cart").click(function () {
       $(".form-intalink,.simpleCart_items").slideToggle("normal");
-      $(this).toggleClass("active");
+      //$(this).toggleClass("active");
       $("#kurir").val("default");
       $("#ongkos").html("<option value='default'>Pilih Ongkir</option>");
       $(".simpleCart_shipping").html("RpNaN");
