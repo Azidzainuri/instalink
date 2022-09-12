@@ -131,5 +131,6 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appear
 .menunav-wrap-background{width:100%;height:55px;display:flex;justify-content:center;background:rgb(146 151 179 / 45%);backdrop-filter:blur(5px);box-shadow:1px 0 0 rgb(22 8 43 / 10%)}
 .menunav-indicator{width:60px;height:60px;position:absolute;left:0;bottom:18px;right:0;margin:auto;border-radius:50%;border:2px solid #205238}
 .menunav-bottom-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;-webkit-box-align:center;-ms-flex-align:center;align-items:center}  
-#loadmorebtn{position:relative;display:block;padding:5px 10px;margin:0 auto;text-align:center;margin-bottom:85px;background:#205238;color:#fff;max-width:150px;border-radius:8px;cursor:pointer}
+#loadmorebtn{position:relative;display:block;padding:5px 10px;margin:0 auto;text-align:center;margin-top:10px;margin-bottom:10px;background:#205238;color:#fff;max-width:150px;border-radius:8px;cursor:pointer}
+.link-footer{margin:0!important;display:none!important;}
 .clear{clear:both;}
