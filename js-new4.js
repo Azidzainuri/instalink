@@ -2050,7 +2050,7 @@ simpleCart({
     },
 });
 $(function () {
-    $.get("https://ls.berinsta.com/cek_provinsi.php", { prov_id: "" }).done(function (e) {
+    $.get("https://kolomilmu.com/ongkir/cek_provinsi.php", { prov_id: "" }).done(function (e) {
         var t = JSON.parse(e);
         $.each(t.rajaongkir.results, function () {
             $("#provinsi").append('<option value="' + this.province_id + '">' + this.province + "</option>");
@@ -2061,7 +2061,7 @@ $(function () {
             var kab = $("#kabupaten").find(":selected").val();
             $.ajax({
                 type: "GET",
-                url: "https://ls.berinsta.com/cek_kecamatan.php",
+                url: "https://kolomilmu.com/ongkir/cek_kecamatan.php",
                 data: "kab=" + kab,
                 success: function (data) {
                     //jika data berhasil didapatkan, tampilkan ke dalam option select kabupaten
@@ -2075,7 +2075,7 @@ $(function () {
         var prov = $("#provinsi").find(":selected").val();
         $.ajax({
             type: "GET",
-            url: "https://ls.berinsta.com/cek_kabupaten.php",
+            url: "https://kolomilmu.com/ongkir/cek_kabupaten.php",
             data: "prov_id=" + prov,
             success: function (data) {
                 //jika data berhasil didapatkan, tampilkan ke dalam option select kabupaten
@@ -2105,7 +2105,7 @@ $(function () {
                     function getData(idKurir) {
                 $.ajax({
                     type: "POST",
-                    url: "https://ls.berinsta.com/cek_ongkir.php",
+                    url: "https://kolomilmu.com/ongkir/cek_ongkir.php",
                     data: { kec: kec, kurir: idKurir, asal: asal, berat: berat },
                     success: function (data) {
                         json = JSON.parse(data); // ongkir ganti data response dari api
